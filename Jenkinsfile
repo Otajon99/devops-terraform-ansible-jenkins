@@ -70,7 +70,7 @@ pipeline {
             writeFile file: "../ansible/inventory.aws_ec2.yml", text: """\
 all:
   hosts:
-    web1:
+    node2:
       ansible_host: ${ip}
       ansible_user: ec2-user
       ansible_ssh_private_key_file: ${WORKSPACE}/my-devops-key.pem
