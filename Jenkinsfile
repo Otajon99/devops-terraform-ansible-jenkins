@@ -73,7 +73,7 @@ all:
     web1:
       ansible_host: ${ip}
       ansible_user: ec2-user
-      ansible_ssh_private_key_file: ${WORKSPACE}/ec2_key.pem
+      ansible_ssh_private_key_file: ${WORKSPACE}/my-devops-key.pem
 """
           }
         }
