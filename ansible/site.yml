@@ -1,6 +1,6 @@
 ---
 - name: Configure web server
-  hosts: node1
+  hosts: node2
   become: yes
   vars:
     deployed_by: "Jenkins Pipeline"
