@@ -86,8 +86,8 @@ all:
           sshUserPrivateKey(credentialsId: "${SSH_KEY_CRED_ID}", keyFileVariable: 'KEYFILE')
         ]) {
           sh """
-            cp "$KEYFILE" ec2_key.pem
-            chmod 600 ec2_key.pem
+            cp "$KEYFILE" my-devops-key.pem
+            chmod 600 my-devops-key.pem
             cd ansible
             ansible --version
             ansible-playbook site.yml
